@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cc.ivision.widget.FullScreenTextureView
+        android:id="@+id/m_textureView"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp" >
+        
+        <ImageView
+            android:id="@+id/iv_left_eye"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@mipmap/open_eye" />
+
+        <TextView
+            android:id="@+id/tv_left_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左眼"
+            android:layout_below="@id/iv_left_eye"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_right_eye"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@mipmap/close_eye" />
+
+        <TextView
+            android:id="@+id/tv_right_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右眼"
+            android:layout_below="@id/iv_right_eye"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_test_type_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="裸眼视力"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_test_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_test_type_show"
+        android:layout_marginTop="20dp"
+        android:text="0/0"
+        android:textSize="28sp"
+        android:textColor="#3c3c3c"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_test_result"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正确"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#14CA64"
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="错误"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FF5959"
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_symbol"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_test_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:id="@+id/iv_test_type"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/img_luoyan" />
+
+        <TextView
+            android:id="@+id/tv_test_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="裸眼视力"
+            android:layout_below="@id/iv_test_type"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:id="@+id/iv_exit"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/img_exit" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="退出测试"
+            android:layout_below="@id/iv_exit"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textColor="@color/black" />
+</RelativeLayout>

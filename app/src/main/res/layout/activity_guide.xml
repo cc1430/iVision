@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cc.ivision.activity.GuideActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/guide_card_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:textSize="14sp"
+            android:text="左眼视力"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="14dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="右眼视力" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="5.1/1.2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="40dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="5.1/1.2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="74dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="最近测试时间：2024-1-8 15:30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:drawableRight="@mipmap/guide_arrow"
+            android:text="查看更多" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3c3c3c"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:text="请将手机屏幕调制最亮\n手机高度可平视\n站在2.5米远处" />
+
+    <ImageView
+        android:id="@+id/iv_guide_center_img"
+        android:layout_width="242dp"
+        android:layout_height="107dp"
+        android:src="@mipmap/guide_center_img"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_guide"
+        android:layout_marginTop="45dp"/>
+
+    <TextView
+        android:id="@+id/tv_guide_start"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:background="@drawable/guide_start_button_bg"
+        android:layout_below="@id/iv_guide_center_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="开始测试"
+        android:textColor="@color/white"
+        android:textSize="22sp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/guide_gesture_rect"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="1px"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/guide_gesture_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="向左"
+                    android:gravity="center"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@mipmap/guide_gesture_left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="向右"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@mipmap/guide_gesture_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="向上"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@mipmap/guide_gesture_up" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="向下"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@mipmap/guide_gesture_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下一个"
+                    android:gravity="center"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@mipmap/guide_gesture_next" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="停止/返回"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@mipmap/guide_gesture_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@mipmap/guide_gesture_ok" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

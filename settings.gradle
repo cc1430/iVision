@@ -1,0 +1,35 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/releases' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url "https://www.jitpack.io" }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        jcenter()
+
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/releases' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url "https://www.jitpack.io" }
+
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+rootProject.name = "iVision"
+include ':app'
+include ':base'
+

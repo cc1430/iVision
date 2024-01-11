@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cc.ivision.activity.HomeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/home_bg" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="60dp"
+                android:src="@mipmap/home_banner"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp" >
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                    
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/home_shilidangan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#3C3C3C"
+                        android:textSize="14sp"
+                        android:text="视力档案" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/home_huyanzhishi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3C3C3C"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="14sp"
+                        android:text="护眼知识" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/home_huyanshangcheng" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#3C3C3C"
+                        android:textSize="14sp"
+                        android:text="护眼商城" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/home_lianxianyisheng" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#3C3C3C"
+                        android:textSize="14sp"
+                        android:text="连线医生" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/home_zaixianceshili" />
+                
+                <TextView
+                    android:id="@+id/btn_test"
+                    android:layout_width="92dp"
+                    android:layout_height="36dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="88dp"
+                    android:textSize="14sp"
+                    android:text="立即测试"
+                    android:background="@drawable/home_test_button" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="68dp"
+                    android:textSize="14sp"
+                    android:text="左眼视力" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="127dp"
+                    android:layout_marginTop="68dp"
+                    android:textSize="14sp"
+                    android:text="右眼视力" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="94dp"
+                    android:textSize="24sp"
+                    android:textColor="#15BEDB"
+                    android:text="5.1/1.2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="127dp"
+                    android:layout_marginTop="94dp"
+                    android:textSize="24sp"
+                    android:textColor="#59C889"
+                    android:text="5.1/1.2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="128dp"
+                    android:textSize="14sp"
+                    android:text="最近测试时间：2024-1-8 15:30" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="18dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3c3c3c"
+                    android:layout_centerVertical="true"
+                    android:text="护眼知识"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="更多"
+                    android:drawableRight="@mipmap/home_more"/>
+            </RelativeLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/home_zhishi1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textSize="14sp"
+                        android:textColor="#3C3C3C"
+                        android:text="家长注意，孩子有这些表现就离近视不远了"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8384"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:drawableLeft="@mipmap/home_read_amount" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/home_zhishi2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textSize="14sp"
+                        android:textColor="#3C3C3C"
+                        android:text="护眼灯怎么选才是真“护眼”？"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8384"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:drawableLeft="@mipmap/home_read_amount" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/home_zhishi3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textSize="14sp"
+                        android:textColor="#3C3C3C"
+                        android:text="保证两小时户外活动，才能有效防控近视。"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8384"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:drawableLeft="@mipmap/home_read_amount" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

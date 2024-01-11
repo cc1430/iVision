@@ -1,0 +1,96 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk COMPILE_SDK_VERSION.toInteger()
+
+    defaultConfig {
+        applicationId "com.cc.ivision"
+        minSdk MIN_SDK_VERSION.toInteger()
+        targetSdk TARGET_SDK_VERSION.toInteger()
+        versionCode buildTime().toInteger()
+        versionName "09.99.P-20${buildTime2()}"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "APP_KEY", "\"NsatQHThssYWLLCQs7Yl1GwT\"")
+        buildConfigField("String", "APP_SECRET", "\"IVQGRn4rcbtqeDiL2oyleLgnqGCWGyz8\"")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = "iVision_" + "${defaultConfig.versionName}.apk"
+                outputFileName = fileName
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+}
+
+dependencies {
+
+    implementation CORE_KTX
+    implementation APPCOMPAT
+    implementation MATERIAL
+    implementation CONSTRAINT_LAYOUT
+    testImplementation JUNIT
+    androidTestImplementation ANDROIDX_JUNIT
+    androidTestImplementation ESPRESSO_CORE
+
+    implementation EVENT_BUS
+
+    implementation GLIDE
+    annotationProcessor GLIDE_COMPILER
+
+    api RETROFIT2
+    api RETROFIT_RXJAVA2
+    api RETROFIT_GSON
+    api OKHTTP_LOGGER
+
+    api RX_ANDROID
+    api RXJAVA2
+
+    implementation LIFECYCLE_LIVEDATA_KTX
+    implementation LIFECYCLE_VIEWMODEL_KTX
+    kapt LIFECYCLE_COMPILER
+
+    implementation project(":base")
+    implementation Libs.eventbus
+}
+
+//获取当前时间
+def buildTime() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHH')
+    return formattedDate
+}
+
+def buildTime2() {
+    def date = new Date()
+    def formattedDate = date.format('yyMMddHHmm')
+    return formattedDate
+}
