@@ -5,9 +5,9 @@
 ## GIF 展示
 ![Image](doc/App.gif)
 
-> 你可以直接下载 [演示App](https://raw.githubusercontent.com/cc1430/iVision/doc/main/iVision_09.99.P-202401111604.apk)
+> 你可以直接下载 [演示App](https://raw.githubusercontent.com/cc1430/iVision/main/doc/iVision_09.99.P-202401111604.apk)
 体验效果
 
 ---
-###视力测试部分流程说明
+## 视力测试部分流程说明
 ![Image](doc/视力测试业务流程图.jpg)
