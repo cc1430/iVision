@@ -4,5 +4,6 @@
 ## GIF 展示
 ![Image](App.gif)
 
-> 你可以直接下载 [演示App](https://raw.githubusercontent.com/jenly1314/MLKit/master/app/release/app-release.apk)
+
+> 你可以直接下载 [演示App](https://github.com/cc1430/iVision/blob/main/iVision_09.99.P-202401111604.apk)
 体验效果
