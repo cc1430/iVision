@@ -5,5 +5,5 @@
 ![Image](App.gif)
 
 
-> 你可以直接下载 [演示App](https://github.com/cc1430/iVision/blob/main/iVision_09.99.P-202401111604.apk)
+> 你可以直接下载 [演示App](https://raw.githubusercontent.com/cc1430/iVision/main/iVision_09.99.P-202401111604.apk)
 体验效果
